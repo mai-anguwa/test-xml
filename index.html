@@ -29,7 +29,7 @@
         xml.send()
         async function fuck(){
             let response = await fetch('data.html');
-            let data = response.json();
+            let data = response.text();
             container.innerHTML = data;
         }
     </script>
